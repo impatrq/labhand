@@ -11,9 +11,9 @@
 
 void Timer0_Init(void);
 float  por_adc;
-unsigned int value1 = 0;
-int tmr,DUTY_CALCULADO;
-
+long int value1 = 0;
+static long int DUTY_CALCULADO;
+long int tmr;
 void main(void) {
     ADCON0bits.ADON = 1;
     ADCON0bits.CHS = 1;
@@ -31,14 +31,14 @@ void main(void) {
         while (ADCON0bits.GO_DONE);
         value1 = ADRESH;
         value1 = (value1 << 8) | ADRESL;
-        PORTB = value1;
+
         por_adc = (100*value1)/1023;
+ 
         tmr = (por_adc*625)/100;
-        LATCbits.LATC0 = 1;
+        
         DUTY_CALCULADO = 54285 - tmr;
-        DUTY_CALCULADO = 700;
-        TMR0L = DUTY_CALCULADO;
-        TMR0H = DUTY_CALCULADO>>8;
+       
+        
     }
 }
 
@@ -58,24 +58,20 @@ void Timer0_Init(void){
 void __interrupt() Timer_INT(void){
     
     if(INTCONbits.TMR0IF){
-        if(PORTDbits.RD4){
-            LATDbits.LATD1 = 1;
+        LATDbits.LATD1 = 1;
+        if(DUTY_CALCULADO != 0){
+           
             __delay_ms(2);
             LATDbits.LATD1 = 0;
-            TMR0L = 0x0D;
-            TMR0H = 0xD4;
+            TMR0L = DUTY_CALCULADO;
+            TMR0H = DUTY_CALCULADO>>8;
             INTCONbits.TMR0IF = 0;
-        }
-        else{
-            LATDbits.LATD1 = 1;
-            __delay_ms(1);
-            LATDbits.LATD1 = 0;
-            TMR0L = 0x9C;
-            TMR0H = 0xD1;
-            INTCONbits.TMR0IF = 0;
+            PORTB = DUTY_CALCULADO;
         }
     }
 }
+
+
 /* ADCON0bits.ADON = 1;
     ADCON0bits.CHS = 1;
     ADCON2bits.ACQT = 2;

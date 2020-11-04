@@ -81,24 +81,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "6792
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6792: extern volatile unsigned char ADRESL __attribute__((address(0xFC3)));
 [v _ADRESL `Vuc ~T0 @X0 0 e@4035 ]
-"2453
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2453: extern volatile unsigned char PORTB __attribute__((address(0xF81)));
-[v _PORTB `Vuc ~T0 @X0 0 e@3969 ]
-"3191
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 3191:     struct {
-[s S133 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S133 . LATC0 LATC1 LATC2 . LATC6 LATC7 ]
-"3199
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 3199:     struct {
-[s S134 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S134 . LC0 LC1 LC2 . LC6 LC7 ]
-"3190
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 3190: typedef union {
-[u S132 `S133 1 `S134 1 ]
-[n S132 . . . ]
-"3208
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 3208: extern volatile LATCbits_t LATCbits __attribute__((address(0xF8B)));
-[v _LATCbits `VS132 ~T0 @X0 0 e@3979 ]
 "8588
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8588:     struct {
 [s S360 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -135,25 +117,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _T0CONbits `VS346 ~T0 @X0 0 e@4053 ]
 [t ~ __interrupt . k ]
 [t T36 __interrupt ]
-"2711
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2711:     struct {
-[s S117 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S117 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
-"2721
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2721:     struct {
-[s S118 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S118 . SPP0 SPP1 SPP2 SPP3 SPP4 SPP5 SPP6 SPP7 ]
-"2731
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2731:     struct {
-[s S119 :7 `uc 1 :1 `uc 1 ]
-[n S119 . . SS2 ]
-"2710
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2710: typedef union {
-[u S116 `S117 1 `S118 1 `S119 1 ]
-[n S116 . . . . ]
-"2736
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2736: extern volatile PORTDbits_t PORTDbits __attribute__((address(0xF83)));
-[v _PORTDbits `VS116 ~T0 @X0 0 e@3971 ]
 "3269
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 3269:     struct {
 [s S136 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -173,6 +136,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "203 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\pic18.h
 [v __delay `JF3152 ~T0 @X0 0 e ]
 [p i __delay ]
+"2453 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2453: extern volatile unsigned char PORTB __attribute__((address(0xF81)));
+[v _PORTB `Vuc ~T0 @X0 0 e@3969 ]
 "54 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 54: __asm("SPPDATA equ 0F62h");
 [; <" SPPDATA equ 0F62h ;# ">
@@ -687,15 +653,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;prueba.c: 13: float por_adc;
 [v _por_adc `f ~T0 @X0 1 e ]
 "14
-[; ;prueba.c: 14: unsigned int value1 = 0;
-[v _value1 `ui ~T0 @X0 1 e ]
+[; ;prueba.c: 14: long int value1 = 0;
+[v _value1 `l ~T0 @X0 1 e ]
 [i _value1
--> -> 0 `i `ui
+-> -> 0 `i `l
 ]
 "15
-[; ;prueba.c: 15: int tmr,DUTY_CALCULADO;
-[v _tmr `i ~T0 @X0 1 e ]
-[v _DUTY_CALCULADO `i ~T0 @X0 1 e ]
+[; ;prueba.c: 15: static long int DUTY_CALCULADO;
+[v _DUTY_CALCULADO `l ~T0 @X0 1 s ]
+"16
+[; ;prueba.c: 16: long int tmr;
+[v _tmr `l ~T0 @X0 1 e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
 "17
 [; ;prueba.c: 17: void main(void) {
@@ -752,34 +720,19 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 373 ]
 "32
 [; ;prueba.c: 32:         value1 = ADRESH;
-[e = _value1 -> _ADRESH `ui ]
+[e = _value1 -> _ADRESH `l ]
 "33
 [; ;prueba.c: 33:         value1 = (value1 << 8) | ADRESL;
-[e = _value1 | << _value1 -> 8 `i -> _ADRESL `ui ]
-"34
-[; ;prueba.c: 34:         PORTB = value1;
-[e = _PORTB -> _value1 `uc ]
+[e = _value1 | << _value1 -> 8 `i -> _ADRESL `l ]
 "35
 [; ;prueba.c: 35:         por_adc = (100*value1)/1023;
-[e = _por_adc -> / * -> -> 100 `i `ui _value1 -> -> 1023 `i `ui `f ]
-"36
-[; ;prueba.c: 36:         tmr = (por_adc*625)/100;
-[e = _tmr -> / * _por_adc -> -> 625 `i `f -> -> 100 `i `f `i ]
+[e = _por_adc -> / * -> -> 100 `i `l _value1 -> -> 1023 `i `l `f ]
 "37
-[; ;prueba.c: 37:         LATCbits.LATC0 = 1;
-[e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
-"38
-[; ;prueba.c: 38:         DUTY_CALCULADO = 54285 - tmr;
-[e = _DUTY_CALCULADO -> - -> 54285 `l -> _tmr `l `i ]
+[; ;prueba.c: 37:         tmr = (por_adc*625)/100;
+[e = _tmr -> / * _por_adc -> -> 625 `i `f -> -> 100 `i `f `l ]
 "39
-[; ;prueba.c: 39:         DUTY_CALCULADO = 700;
-[e = _DUTY_CALCULADO -> 700 `i ]
-"40
-[; ;prueba.c: 40:         TMR0L = DUTY_CALCULADO;
-[e = _TMR0L -> _DUTY_CALCULADO `uc ]
-"41
-[; ;prueba.c: 41:         TMR0H = DUTY_CALCULADO>>8;
-[e = _TMR0H -> >> _DUTY_CALCULADO -> 8 `i `uc ]
+[; ;prueba.c: 39:         DUTY_CALCULADO = 54285 - tmr;
+[e = _DUTY_CALCULADO - -> 54285 `l _tmr ]
 "42
 [; ;prueba.c: 42:     }
 }
@@ -842,62 +795,39 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! != -> . . _INTCONbits 0 2 `i -> 0 `i 376  ]
 {
 "61
-[; ;prueba.c: 61:         if(PORTDbits.RD4){
-[e $ ! != -> . . _PORTDbits 0 4 `i -> 0 `i 377  ]
-{
+[; ;prueba.c: 61:         LATDbits.LATD1 = 1;
+[e = . . _LATDbits 0 1 -> -> 1 `i `uc ]
 "62
-[; ;prueba.c: 62:             LATDbits.LATD1 = 1;
-[e = . . _LATDbits 0 1 -> -> 1 `i `uc ]
-"63
-[; ;prueba.c: 63:             _delay((unsigned long)((2)*(1000000L/4000.0)));
-[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 1000000 `l `d .4000.0 `ul ]
-"64
-[; ;prueba.c: 64:             LATDbits.LATD1 = 0;
-[e = . . _LATDbits 0 1 -> -> 0 `i `uc ]
-"65
-[; ;prueba.c: 65:             TMR0L = 0x0D;
-[e = _TMR0L -> -> 13 `i `uc ]
-"66
-[; ;prueba.c: 66:             TMR0H = 0xD4;
-[e = _TMR0H -> -> 212 `i `uc ]
-"67
-[; ;prueba.c: 67:             INTCONbits.TMR0IF = 0;
-[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-"68
-[; ;prueba.c: 68:         }
-}
-[e $U 378  ]
-"69
-[; ;prueba.c: 69:         else{
-[e :U 377 ]
+[; ;prueba.c: 62:         if(DUTY_CALCULADO != 0){
+[e $ ! != _DUTY_CALCULADO -> -> 0 `i `l 377  ]
 {
-"70
-[; ;prueba.c: 70:             LATDbits.LATD1 = 1;
-[e = . . _LATDbits 0 1 -> -> 1 `i `uc ]
-"71
-[; ;prueba.c: 71:             _delay((unsigned long)((1)*(1000000L/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 1000000 `l `d .4000.0 `ul ]
-"72
-[; ;prueba.c: 72:             LATDbits.LATD1 = 0;
+"64
+[; ;prueba.c: 64:             _delay((unsigned long)((2)*(1000000L/4000.0)));
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 1000000 `l `d .4000.0 `ul ]
+"65
+[; ;prueba.c: 65:             LATDbits.LATD1 = 0;
 [e = . . _LATDbits 0 1 -> -> 0 `i `uc ]
-"73
-[; ;prueba.c: 73:             TMR0L = 0x9C;
-[e = _TMR0L -> -> 156 `i `uc ]
-"74
-[; ;prueba.c: 74:             TMR0H = 0xD1;
-[e = _TMR0H -> -> 209 `i `uc ]
-"75
-[; ;prueba.c: 75:             INTCONbits.TMR0IF = 0;
+"66
+[; ;prueba.c: 66:             TMR0L = DUTY_CALCULADO;
+[e = _TMR0L -> _DUTY_CALCULADO `uc ]
+"67
+[; ;prueba.c: 67:             TMR0H = DUTY_CALCULADO>>8;
+[e = _TMR0H -> >> _DUTY_CALCULADO -> 8 `i `uc ]
+"68
+[; ;prueba.c: 68:             INTCONbits.TMR0IF = 0;
 [e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-"76
-[; ;prueba.c: 76:         }
+"69
+[; ;prueba.c: 69:             PORTB = DUTY_CALCULADO;
+[e = _PORTB -> _DUTY_CALCULADO `uc ]
+"70
+[; ;prueba.c: 70:         }
 }
-[e :U 378 ]
-"77
-[; ;prueba.c: 77:     }
+[e :U 377 ]
+"71
+[; ;prueba.c: 71:     }
 }
 [e :U 376 ]
-"78
-[; ;prueba.c: 78: }
+"72
+[; ;prueba.c: 72: }
 [e :UE 375 ]
 }
