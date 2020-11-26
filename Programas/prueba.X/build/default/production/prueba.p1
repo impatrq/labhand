@@ -673,10 +673,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _getCAD0 ]
 [f ]
 "16
-[; ;prueba.c: 16: 
+[; ;prueba.c: 16:     servo = servo / 3;
 [e = _ADCON1 -> -> 14 `i `uc ]
 "17
-[; ;prueba.c: 17:  TMR0L = 177 - (servo / 3);
+[; ;prueba.c: 17:  TMR0L = 177 - servo;
 [e = _ADCON0 -> -> 0 `i `uc ]
 "18
 [; ;prueba.c: 18:  }
@@ -693,7 +693,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 369 ]
 {
 "22
-[; ;prueba.c: 22:  T0CON = 0b11000000;
+[; ;prueba.c: 22:  T0CON = 0b10000000;
 }
 [e :U 368 ]
 "21
@@ -720,9 +720,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "28
 [; ;prueba.c: 28: void servocontrol (){
 [e = _T0CON -> -> 197 `i `uc ]
+"29
+[; ;prueba.c: 29:  if(PORTCbits.RC2==1){
+[e = _servo -> / -> _servo `i -> 3 `i `s ]
 "30
 [; ;prueba.c: 30:   PORTCbits.RC2 = 0;
-[e = _TMR0L -> - -> 177 `i / -> _servo `i -> 3 `i `uc ]
+[e = _TMR0L -> - -> 177 `i -> _servo `i `uc ]
 "31
 [; ;prueba.c: 31:   T0_servoOff();
 [e :UE 371 ]
@@ -738,7 +741,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _INTCON -> -> 160 `i `uc ]
 "35
 [; ;prueba.c: 35:   T0_servoOn();
-[e = _T0CON -> -> 192 `i `uc ]
+[e = _T0CON -> -> 128 `i `uc ]
 "36
 [; ;prueba.c: 36:  }
 [e = _servo -> * -> _servo `i -> 9 `i `s ]

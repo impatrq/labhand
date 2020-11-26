@@ -5652,13 +5652,13 @@ short getCAD0 (){
 void T0_servoOn(){
  INTCON = 0b10100000;
  T0CON = 0b11000101;
-
- TMR0L = 177 - (servo / 3);
+    servo = servo / 3;
+ TMR0L = 177 - servo;
  }
 
 void T0_servoOff(){
  INTCON = 0b10100000;
- T0CON = 0b11000000;
+ T0CON = 0b10000000;
  servo = servo * 9;
  TMR0 = 18036 + servo;
  TMR0L = 6;
