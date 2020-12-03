@@ -59,9 +59,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8146
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8146: extern volatile unsigned char TMR0L __attribute__((address(0xFD6)));
 [v _TMR0L `Vuc ~T0 @X0 0 e@4054 ]
-"8139
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8139: extern volatile unsigned short TMR0 __attribute__((address(0xFD6)));
-[v _TMR0 `Vus ~T0 @X0 0 e@4054 ]
+"8153
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8153: extern volatile unsigned char TMR0H __attribute__((address(0xFD7)));
+[v _TMR0H `Vuc ~T0 @X0 0 e@4055 ]
 "2569
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2569:     struct {
 [s S111 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -667,16 +667,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;prueba.c: 13: void T0_servoOn(){
 [v _servo `s ~T0 @X0 1 e ]
 "15
-[; ;prueba.c: 15:  T0CON = 0b11000101;
+[; ;prueba.c: 15:  T0CON = 0b11000100;
 [v _getCAD0 `(s ~T0 @X0 1 ef ]
 {
 [e :U _getCAD0 ]
 [f ]
 "16
-[; ;prueba.c: 16:     servo = servo / 3;
+[; ;prueba.c: 16:     servo = servo / 4;
 [e = _ADCON1 -> -> 14 `i `uc ]
 "17
-[; ;prueba.c: 17:  TMR0L = 177 - servo;
+[; ;prueba.c: 17:  TMR0L = 210 - servo;
 [e = _ADCON0 -> -> 0 `i `uc ]
 "18
 [; ;prueba.c: 18:  }
@@ -693,7 +693,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 369 ]
 {
 "22
-[; ;prueba.c: 22:  T0CON = 0b10000000;
+[; ;prueba.c: 22:  T0CON = 0b11000111;
 }
 [e :U 368 ]
 "21
@@ -705,142 +705,142 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ) -> _ADRESH `s ]
 [e $UE 367  ]
 "24
-[; ;prueba.c: 24:  TMR0 = 18036 + servo;
+[; ;prueba.c: 24: 
 [e :UE 367 ]
 }
 "26
-[; ;prueba.c: 26:  }
+[; ;prueba.c: 26:     TMR0L = 108;
 [v _T0_servoOn `(v ~T0 @X0 1 ef ]
 {
 [e :U _T0_servoOn ]
 [f ]
 "27
-[; ;prueba.c: 27: 
+[; ;prueba.c: 27:     TMR0H = 100;
 [e = _INTCON -> -> 160 `i `uc ]
 "28
-[; ;prueba.c: 28: void servocontrol (){
-[e = _T0CON -> -> 197 `i `uc ]
+[; ;prueba.c: 28:  }
+[e = _T0CON -> -> 196 `i `uc ]
 "29
-[; ;prueba.c: 29:  if(PORTCbits.RC2==1){
-[e = _servo -> / -> _servo `i -> 3 `i `s ]
+[; ;prueba.c: 29: 
+[e = _servo -> / -> _servo `i -> 4 `i `s ]
 "30
-[; ;prueba.c: 30:   PORTCbits.RC2 = 0;
-[e = _TMR0L -> - -> 177 `i -> _servo `i `uc ]
+[; ;prueba.c: 30: void servocontrol (){
+[e = _TMR0L -> - -> 210 `i -> _servo `i `uc ]
 "31
-[; ;prueba.c: 31:   T0_servoOff();
+[; ;prueba.c: 31:  if(PORTCbits.RC2==1){
 [e :UE 371 ]
 }
 "33
-[; ;prueba.c: 33:  else{
+[; ;prueba.c: 33:   T0_servoOff();
 [v _T0_servoOff `(v ~T0 @X0 1 ef ]
 {
 [e :U _T0_servoOff ]
 [f ]
 "34
-[; ;prueba.c: 34:   PORTCbits.RC2 = 1;
+[; ;prueba.c: 34:  }
 [e = _INTCON -> -> 160 `i `uc ]
 "35
-[; ;prueba.c: 35:   T0_servoOn();
-[e = _T0CON -> -> 128 `i `uc ]
+[; ;prueba.c: 35:  else{
+[e = _T0CON -> -> 199 `i `uc ]
 "36
-[; ;prueba.c: 36:  }
+[; ;prueba.c: 36:   PORTCbits.RC2 = 1;
 [e = _servo -> * -> _servo `i -> 9 `i `s ]
-"37
-[; ;prueba.c: 37: }
-[e = _TMR0 -> + -> 18036 `i -> _servo `i `us ]
-"38
-[; ;prueba.c: 38: void __attribute__((picinterrupt(("")))) Interrupciones (void){
-[e = _TMR0L -> -> 6 `i `uc ]
 "39
-[; ;prueba.c: 39:  INTCONbits.GIE = 0;
+[; ;prueba.c: 39: }
+[e = _TMR0L -> -> 108 `i `uc ]
+"40
+[; ;prueba.c: 40: 
+[e = _TMR0H -> -> 100 `i `uc ]
+"41
+[; ;prueba.c: 41: void __attribute__((picinterrupt(("")))) Interrupciones (void){
 [e :UE 372 ]
 }
-"41
-[; ;prueba.c: 41:  servocontrol();
+"43
+[; ;prueba.c: 43:  INTCONbits.T0IF = 0;
 [v _servocontrol `(v ~T0 @X0 1 ef ]
 {
 [e :U _servocontrol ]
 [f ]
-"42
-[; ;prueba.c: 42: }
+"44
+[; ;prueba.c: 44:  servocontrol();
 [e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 374  ]
 {
-"43
-[; ;prueba.c: 43: 
-[e = . . _PORTCbits 0 2 -> -> 0 `i `uc ]
-"44
-[; ;prueba.c: 44: void main (void) {
-[e ( _T0_servoOff ..  ]
 "45
-[; ;prueba.c: 45:  OSCCON = 0b01110000;
+[; ;prueba.c: 45: }
+[e = . . _PORTCbits 0 2 -> -> 0 `i `uc ]
+"46
+[; ;prueba.c: 46: 
+[e ( _T0_servoOff ..  ]
+"47
+[; ;prueba.c: 47: void main (void) {
 }
 [e $U 375  ]
-"46
-[; ;prueba.c: 46:  TRISAbits.RA0=1;
+"48
+[; ;prueba.c: 48:  OSCCON = 0b01110000;
 [e :U 374 ]
 {
-"47
-[; ;prueba.c: 47:  TRISCbits.RC2=0;
-[e = . . _PORTCbits 0 2 -> -> 1 `i `uc ]
-"48
-[; ;prueba.c: 48:  servo=128;
-[e ( _T0_servoOn ..  ]
 "49
-[; ;prueba.c: 49:  servocontrol();
+[; ;prueba.c: 49:  TRISAbits.RA0=1;
+[e = . . _PORTCbits 0 2 -> -> 1 `i `uc ]
+"50
+[; ;prueba.c: 50:  TRISCbits.RC2=0;
+[e ( _T0_servoOn ..  ]
+"51
+[; ;prueba.c: 51:  servo=128;
 }
 [e :U 375 ]
-"50
-[; ;prueba.c: 50:  while(1){
+"52
+[; ;prueba.c: 52:  servocontrol();
 [e :UE 373 ]
 }
 [v $root$_Interrupciones `(v ~T0 @X0 0 e ]
-"51
-[; ;prueba.c: 51:   servo=getCAD0();
+"54
+[; ;prueba.c: 54:   servo=getCAD0();
 [v _Interrupciones `(v ~T36 @X0 1 ef ]
 {
 [e :U _Interrupciones ]
 [f ]
-"52
-[; ;prueba.c: 52: 
-[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
-"53
-[; ;prueba.c: 53:  }
-[e = . . _INTCONbits 1 2 -> -> 0 `i `uc ]
-"54
-[; ;prueba.c: 54:  return;
-[e ( _servocontrol ..  ]
 "55
-[; ;prueba.c: 55:  }
+[; ;prueba.c: 55: 
+[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
+"56
+[; ;prueba.c: 56:  }
+[e = . . _INTCONbits 1 2 -> -> 0 `i `uc ]
+"57
+[; ;prueba.c: 57:  return;
+[e ( _servocontrol ..  ]
+"58
+[; ;prueba.c: 58:  }
 [e :UE 376 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"57
+"60
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"58
-[e = _OSCCON -> -> 112 `i `uc ]
-"59
-[e = . . _TRISAbits 1 0 -> -> 1 `i `uc ]
-"60
-[e = . . _TRISCbits 1 2 -> -> 0 `i `uc ]
 "61
-[e = _servo -> -> 128 `i `s ]
+[e = _OSCCON -> -> 112 `i `uc ]
 "62
-[e ( _servocontrol ..  ]
+[e = . . _TRISAbits 1 0 -> -> 1 `i `uc ]
 "63
+[e = . . _TRISCbits 1 2 -> -> 0 `i `uc ]
+"64
+[e = _servo -> -> 128 `i `s ]
+"65
+[e ( _servocontrol ..  ]
+"66
 [e :U 379 ]
 {
-"64
+"67
 [e = _servo ( _getCAD0 ..  ]
-"66
+"69
 }
 [e :U 378 ]
 [e $U 379  ]
 [e :U 380 ]
-"67
+"70
 [e $UE 377  ]
-"68
+"71
 [e :UE 377 ]
 }
