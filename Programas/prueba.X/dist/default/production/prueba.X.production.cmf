@@ -11,6 +11,11 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
+$C:\Users\Mati\AppData\Local\Temp\scv0x8.o
+idloc IDLOC 5 200000 200000 8 1
+init CODE 0 E E 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 4 300000 300000 E 1
 $dist/default/production\prueba.X.production.o
 cinit CODE 0 346 346 A 1
 idloc IDLOC 5 200000 200000 8 1
@@ -31,11 +36,6 @@ text12 CODE 0 2C2 2C2 26 1
 cstackCOMRAM COMRAM 1 1 1 12 1
 temp COMRAM 1 15 15 1 1
 intcode CODE 0 8 8 6 1
-config CONFIG 4 300000 300000 E 1
-$C:\Users\Mati\AppData\Local\Temp\sfb4x8.o
-idloc IDLOC 5 200000 200000 8 1
-init CODE 0 E E 4 1
-reset_vec CODE 0 0 0 4 1
 config CONFIG 4 300000 300000 E 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -77,7 +77,7 @@ MEDIUMCONST 800-7FFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\prueba.X.production.o
-8 intcode CODE >1612:C:\Users\Mati\AppData\Local\Temp\sfb4x.s
+8 intcode CODE >1612:C:\Users\Mati\AppData\Local\Temp\scv0x.s
 8 intcode CODE >54:C:\Users\Mati\Documents\GitHub\labhand\Programas\prueba.X\prueba.c
 2C2 text12 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul16.c
 2C2 text12 CODE >37:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul16.c
@@ -207,14 +207,14 @@ D4 text3 CODE >41:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aw
 256 text0 CODE >64:C:\Users\Mati\Documents\GitHub\labhand\Programas\prueba.X\prueba.c
 25E text0 CODE >65:C:\Users\Mati\Documents\GitHub\labhand\Programas\prueba.X\prueba.c
 262 text0 CODE >67:C:\Users\Mati\Documents\GitHub\labhand\Programas\prueba.X\prueba.c
-346 cinit CODE >545:C:\Users\Mati\AppData\Local\Temp\sfb4x.s
-346 cinit CODE >547:C:\Users\Mati\AppData\Local\Temp\sfb4x.s
-346 cinit CODE >550:C:\Users\Mati\AppData\Local\Temp\sfb4x.s
-346 cinit CODE >556:C:\Users\Mati\AppData\Local\Temp\sfb4x.s
-346 cinit CODE >558:C:\Users\Mati\AppData\Local\Temp\sfb4x.s
-348 cinit CODE >559:C:\Users\Mati\AppData\Local\Temp\sfb4x.s
-34A cinit CODE >560:C:\Users\Mati\AppData\Local\Temp\sfb4x.s
-34C cinit CODE >561:C:\Users\Mati\AppData\Local\Temp\sfb4x.s
+346 cinit CODE >545:C:\Users\Mati\AppData\Local\Temp\scv0x.s
+346 cinit CODE >547:C:\Users\Mati\AppData\Local\Temp\scv0x.s
+346 cinit CODE >550:C:\Users\Mati\AppData\Local\Temp\scv0x.s
+346 cinit CODE >556:C:\Users\Mati\AppData\Local\Temp\scv0x.s
+346 cinit CODE >558:C:\Users\Mati\AppData\Local\Temp\scv0x.s
+348 cinit CODE >559:C:\Users\Mati\AppData\Local\Temp\scv0x.s
+34A cinit CODE >560:C:\Users\Mati\AppData\Local\Temp\scv0x.s
+34C cinit CODE >561:C:\Users\Mati\AppData\Local\Temp\scv0x.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -234,14 +234,14 @@ __Hspace_1 16 0 ABS 0 - dist/default/production\prueba.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\prueba.X.production.o
 __Hspace_4 60000E 0 ABS 0 - dist/default/production\prueba.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\prueba.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Mati\AppData\Local\Temp\sfb4x8.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Mati\AppData\Local\Temp\scv0x8.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\prueba.X.production.o
 __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\prueba.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\Mati\AppData\Local\Temp\sfb4x8.o
+___sp 0 0 STACK 2 stack C:\Users\Mati\AppData\Local\Temp\scv0x8.o
 _main 24E 0 CODE 0 text0 dist/default/production\prueba.X.production.o
 btemp 15 0 COMRAM 1 temp dist/default/production\prueba.X.production.o
 __end_ofi2_servocontrol 328 0 CODE 0 text8 dist/default/production\prueba.X.production.o
-start E 0 CODE 0 init C:\Users\Mati\AppData\Local\Temp\sfb4x8.o
+start E 0 CODE 0 init C:\Users\Mati\AppData\Local\Temp\scv0x8.o
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\prueba.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\prueba.X.production.o
 _getCAD0 29C 0 CODE 0 text6 dist/default/production\prueba.X.production.o
@@ -251,11 +251,11 @@ ttemp5 16 0 COMRAM 1 temp dist/default/production\prueba.X.production.o
 ttemp6 19 0 COMRAM 1 temp dist/default/production\prueba.X.production.o
 ttemp7 1D 0 COMRAM 1 temp dist/default/production\prueba.X.production.o
 __LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\prueba.X.production.o
-__accesstop 60 0 ABS 0 - C:\Users\Mati\AppData\Local\Temp\sfb4x8.o
-intlevel0 0 0 CODE 0 text C:\Users\Mati\AppData\Local\Temp\sfb4x8.o
-intlevel1 0 0 CODE 0 text C:\Users\Mati\AppData\Local\Temp\sfb4x8.o
-intlevel2 0 0 CODE 0 text C:\Users\Mati\AppData\Local\Temp\sfb4x8.o
-intlevel3 0 0 CODE 0 text C:\Users\Mati\AppData\Local\Temp\sfb4x8.o
+__accesstop 60 0 ABS 0 - C:\Users\Mati\AppData\Local\Temp\scv0x8.o
+intlevel0 0 0 CODE 0 text C:\Users\Mati\AppData\Local\Temp\scv0x8.o
+intlevel1 0 0 CODE 0 text C:\Users\Mati\AppData\Local\Temp\scv0x8.o
+intlevel2 0 0 CODE 0 text C:\Users\Mati\AppData\Local\Temp\scv0x8.o
+intlevel3 0 0 CODE 0 text C:\Users\Mati\AppData\Local\Temp\scv0x8.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\prueba.X.production.o
 wtemp8 16 0 COMRAM 1 temp dist/default/production\prueba.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\prueba.X.production.o
@@ -268,8 +268,8 @@ _ADCON2 FC0 0 ABS 0 - dist/default/production\prueba.X.production.o
 _ADRESH FC4 0 ABS 0 - dist/default/production\prueba.X.production.o
 i2___wmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\prueba.X.production.o
 ___awdiv@dividend B 0 COMRAM 1 cstackCOMRAM dist/default/production\prueba.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\Mati\AppData\Local\Temp\sfb4x8.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\Mati\AppData\Local\Temp\sfb4x8.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\Mati\AppData\Local\Temp\scv0x8.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\Mati\AppData\Local\Temp\scv0x8.o
 __size_ofi2___wmul 0 0 ABS 0 - dist/default/production\prueba.X.production.o
 ?_getCAD0 B 0 COMRAM 1 cstackCOMRAM dist/default/production\prueba.X.production.o
 i2___awdiv@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\prueba.X.production.o
@@ -328,7 +328,7 @@ __Htext8 0 0 ABS 0 text8 dist/default/production\prueba.X.production.o
 __Htext9 0 0 ABS 0 text9 dist/default/production\prueba.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\prueba.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\prueba.X.production.o
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Mati\AppData\Local\Temp\sfb4x8.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Mati\AppData\Local\Temp\scv0x8.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\prueba.X.production.o
 __Hconfig 30000E 0 CONFIG 4 config dist/default/production\prueba.X.production.o
 __Lbank0 0 0 ABS 0 bank0 dist/default/production\prueba.X.production.o
@@ -419,8 +419,8 @@ __Lconfig 0 0 CONFIG 4 config dist/default/production\prueba.X.production.o
 ___wmul@multiplier B 0 COMRAM 1 cstackCOMRAM dist/default/production\prueba.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\prueba.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\prueba.X.production.o
-stackhi 7FF 0 ABS 0 - C:\Users\Mati\AppData\Local\Temp\sfb4x8.o
-stacklo 60 0 ABS 0 - C:\Users\Mati\AppData\Local\Temp\sfb4x8.o
+stackhi 7FF 0 ABS 0 - C:\Users\Mati\AppData\Local\Temp\scv0x8.o
+stacklo 60 0 ABS 0 - C:\Users\Mati\AppData\Local\Temp\scv0x8.o
 __Lintcode 8 0 CODE 0 intcode dist/default/production\prueba.X.production.o
 __Lintret 0 0 ABS 0 intret dist/default/production\prueba.X.production.o
 __Lirdata 0 0 CODE 0 irdata dist/default/production\prueba.X.production.o
@@ -458,7 +458,7 @@ _T0_servoOn 1F6 0 CODE 0 text2 dist/default/production\prueba.X.production.o
 __Ltext10 0 0 ABS 0 text10 dist/default/production\prueba.X.production.o
 __Ltext11 0 0 ABS 0 text11 dist/default/production\prueba.X.production.o
 __Ltext12 0 0 ABS 0 text12 dist/default/production\prueba.X.production.o
-__ramtop 800 0 RAM 0 ramtop C:\Users\Mati\AppData\Local\Temp\sfb4x8.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\Mati\AppData\Local\Temp\scv0x8.o
 __size_of_Interrupciones 0 0 ABS 0 - dist/default/production\prueba.X.production.o
 __Lpowerup E 0 CODE 0 powerup dist/default/production\prueba.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\prueba.X.production.o

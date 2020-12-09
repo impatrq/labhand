@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.30\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\prueba.X.production.sym \
   --cmf=dist/default/production\prueba.X.production.cmf -z -Q18F4550 \
-  -oC:\Users\Mati\AppData\Local\Temp\sfb4x2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\Mati\AppData\Local\Temp\scv0x2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/prueba.X.production.map -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ASTACK=060h-07FFh -pstack=STACK -ACODE=00h-07FFFh \
   -ACONST=00h-07FFFh -ASMALLCONST=0800h-08FFhx120 \
@@ -22,7 +22,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\Mati\AppData\Local\Temp\sfb4x8.o \
+  C:\Users\Mati\AppData\Local\Temp\scv0x8.o \
   dist/default/production\prueba.X.production.o 
 
 Object code version is 3.11
@@ -32,7 +32,7 @@ Machine type is 18F4550
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Mati\AppData\Local\Temp\sfb4x8.o
+C:\Users\Mati\AppData\Local\Temp\scv0x8.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 init                                  E        E        4        4       0

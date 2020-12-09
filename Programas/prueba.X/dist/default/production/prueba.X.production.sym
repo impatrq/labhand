@@ -274,7 +274,7 @@ cstackCOMRAM 1 15 COMRAM 1 1
 %locals
 dist/default/production\prueba.X.production.o
 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
-C:\Users\Mati\AppData\Local\Temp\sfb4x.s
+C:\Users\Mati\AppData\Local\Temp\scv0x.s
 545 346 0 CODE 0
 547 346 0 CODE 0
 550 346 0 CODE 0
@@ -360,7 +360,7 @@ prueba.c
 21 2AC 0 CODE 0
 23 2BA 0 CODE 0
 24 2C0 0 CODE 0
-C:\Users\Mati\AppData\Local\Temp\sfb4x.s
+C:\Users\Mati\AppData\Local\Temp\scv0x.s
 1612 8 0 CODE 0
 prueba.c
 54 8 0 CODE 0
